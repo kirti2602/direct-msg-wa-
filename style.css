@@ -3,6 +3,7 @@
 :root{
     --dark-green: #1E6F5C;
     --light-green: #14b87e;
+    --btn-color:#01E675;
 }
 
 *{
@@ -56,12 +57,12 @@ input{
 }
 textarea:focus{
     outline: none;
-    box-shadow: 0px 0px 3px #0E49B5;
+    box-shadow: 0px 0px 5px var(--btn-color);
 }
 
 input:focus{
     outline: none;
-    box-shadow: 0px 0px 3px #0E49B5;
+    box-shadow: 0px 0px 5px var(--btn-color);
 }
 
 
@@ -69,7 +70,7 @@ button{
     margin-top: 1.5rem;
     width: 4.5rem;
     height: 2.4rem;
-    background-color: #01E675;
+    background-color: var(--btn-color);
     border: none;
     color: white;
     border-radius: 0.5rem;
