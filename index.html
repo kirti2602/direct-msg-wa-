@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1465705b72.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
-    <h1>WhatsApp Direct</h1>
-    <p>Send messages direct on WhatsApp without saving any contact(s)</p>
 
-    <input id="phone" type="text">enter phone number(without country code)
-    <p id="country"></p>
-    <textarea placeholder="optional" name="" id="msg" cols="30" rows="10"></textarea>
-<br>
-<a id="waLink" href=""><button id="sendMsg">Chat</button></a>
-<script src="app.js" ></script>
+<body>
+    <nav>
+        <div>   
+            <a href="https://github.com/kirti2602/direct-msg-wa-"><i class="fab fa-github"></i></a>
+        </div>
+               
+        <h1 class="child one">WhatsApp Direct  <i class="far fa-comment-dots"></i></h1>
+  
+        <p>Send messages direct on WhatsApp without having to save any contact(s) :)</p>
+    </nav>
+    <!-- <i class="fas fa-comment-dots"></i> -->
+    <section>
+        <p>Enter phone number of recipient in international format (For e.g.- +91XXXXXXXX19 for India)</p>
+        <input id="phone" type="text">
+        <p id="country"></p>
+
+        <p>Enter your message(optional):</p>
+        <textarea placeholder="enter your message here" name="" id="msg" cols="50" rows="10"></textarea>
+        <br>
+        <a id="waLink" href=""><button id="sendMsg">Chat</button></a>
+    </section>
+
+
+    <script src="app.js"></script>
 
 </body>
+
 </html>
