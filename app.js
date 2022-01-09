@@ -3,8 +3,9 @@ let country = document.getElementById("country");
 let phone = document.getElementById("phone");
 let sendMsg = document.getElementById("sendMsg");
 let msg = document.getElementById("msg");
+let linkOfWA = document.getElementById("waLink");
 
-let whatsAppApi = "https://wa.me/";
+let whatsApp = "https://wa.me/";
 
 //countrycodes with names
 let countryInfo = {
@@ -973,6 +974,7 @@ phone.addEventListener("input", () => {
 })
 
 sendMsg.addEventListener("click", ()=>{
-    fetch(URL+phone.value+"?text="+msg.value)
-    .then(res => res.json())
+
+    linkOfWA.setAttribute("href", `${whatsApp}${phone.value}?text=${msg.value}`);
+
 })
