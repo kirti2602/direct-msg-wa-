@@ -55,6 +55,11 @@ textarea, input{
 input{
     width: 12rem;
 }
+
+#country{
+    color: var(--btn-color);
+}
+
 textarea:focus{
     outline: none;
     box-shadow: 0px 0px 5px var(--btn-color);
